@@ -12,6 +12,8 @@ export class AppComponent {
   onlyOdd = false;
   type: string = "odd";
 
+  value = 5;
+
   toggleOdd() {
     this.onlyOdd = !this.onlyOdd;
     this.type == "odd" ? this.type = "even" : this.type = "odd";
