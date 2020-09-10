@@ -10,4 +10,11 @@ export class AppComponent {
   oddNumbers = [1,3,5];
   evenNumbers = [2,4];
   onlyOdd = false;
+  type: string = "odd";
+
+  toggleOdd() {
+    this.onlyOdd = !this.onlyOdd;
+    this.type == "odd" ? this.type = "even" : this.type = "odd";
+  }
+
 }
